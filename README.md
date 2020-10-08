@@ -1,4 +1,4 @@
-# Movies Follower ![alt text](https://i.imgur.com/0gfMihl.png)
+# ![alt text](https://i.imgur.com/0gfMihl.png) Movies Follower
 
 Movies Follower is an app that lets you discover movies and tv shows using the moviesdb API.
 
@@ -26,7 +26,7 @@ Movies Follower is an app that lets you discover movies and tv shows using the m
 - RecyclerViews
 - Bottom Navigation View
 
-# Things I know I should improve or include in teh future
+# Things I know I should improve or include in the future
 
 - Start using Fragment factory, and get rid of the methods I declared inside of my fragments in order to pass arguments such as *setAction* and *setQueries* that are iside of SearchTvFrament..etc.
 - Start using Dagger2 for dependency injection.
