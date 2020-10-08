@@ -9,7 +9,7 @@ Movies Follower is an app that lets you discover movies and tv shows using the m
 - You can discover movies/tvShows by their genres.
 - You can use the **Filter Tool** to control your search in a flexible way.
 - You can store your favorite movies/tvShows in a local database and view them whenever you want.
-- You can swipe to delete your favorite movies/tvShows, and you can undo that delete.
+- You can swipe to delete your favorite movies/tvShows, and you can undo that delete as well.
 - You can watch trailers and videos on the movie/tvShow page.
 
 # I used 
