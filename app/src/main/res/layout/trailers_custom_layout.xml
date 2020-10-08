@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="20dp"
+    android:foreground="@drawable/item_ripple">
+
+    <ImageView
+        android:id="@+id/trailers_thumbnail"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fifth_image" />
+
+    <ImageView
+        android:layout_width="357dp"
+        android:layout_height="200dp"
+        android:src="@drawable/trailer_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/play_vector"
+        app:layout_constraintBottom_toBottomOf="@+id/trailers_thumbnail"
+        app:layout_constraintEnd_toEndOf="@+id/trailers_thumbnail"
+        app:layout_constraintStart_toStartOf="@+id/trailers_thumbnail"
+        app:layout_constraintTop_toTopOf="@+id/trailers_thumbnail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

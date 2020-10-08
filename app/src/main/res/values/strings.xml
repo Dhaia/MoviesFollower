@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Movies Follower</string>
+
+    <string name="movies_fragment_text">Movies</string>
+    <string name="tv_fragment_text">TV Shows</string>
+
+    <string name="main_notification_channel_name">Primary</string>
+    <string name="trending_notification_title">See what\'s trending</string>
+    <string name="trending_notification_body">You may missed a lot of interesting Movies that are trending now!</string>
+
+    <string name="itemPageVotedText">\tVoted</string>
+    <string name="similar_movies">Similar Movies</string>
+    <string name="similar_tv_thows">Similar Tv Shows</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="sortByListKey">sortBySharedPrefKey</string>
+    ---- SortByArray Entries
+    <string name="sortByPopularity">Popularity</string>
+    <string name="sortByRating">Rating</string>
+    <string name="sortByReleaseDate">Release date</string>
+    <string name="sortByTitle">Title</string>
+    ---- SortByArray Entry Values
+    <string name="sortByPopularityValue">popularity.desc</string>
+    <string name="sortByRatingValue">vote_average.desc</string>
+    <string name="sortByReleaseDateValue">release_date.desc</string>
+    <string name="sortByTitleValue">original_title.desc</string>
+    ---- GenresArray Entries
+    <string name="genresKey">genresSharedPrefKey</string>
+
+    <string name="genres_action">Action</string>
+    <string name="genres_adventure">Adventure</string>
+    <string name="genres_animation">Animation</string>
+    <string name="genres_comedy">Comedy</string>
+    <string name="genres_crime">Crime</string>
+    <string name="genres_documentary">Documentary</string>
+    <string name="genres_drama">Drama</string>
+    <string name="genres_family">Family</string>
+    <string name="genres_fantasy">Fantasy</string>
+    <string name="genres_history">History</string>
+    <string name="genres_horror">Horror</string>
+    <string name="genres_music">Music</string>
+    <string name="genres_romance">Romance</string>
+    <string name="genres_scienceFiction">Science fiction</string>
+    <string name="genres_tvMovie">Tv movie</string>
+    <string name="genres_war">War</string>
+    ---- GenresArray Entry Values
+    <string name="genres_actionValue">28</string>
+    <string name="genres_adventureValue">12</string>
+    <string name="genres_animationValue">16</string>
+    <string name="genres_comedyValue">35</string>
+    <string name="genres_crimeValue">80</string>
+    <string name="genres_documentaryValue">99</string>
+    <string name="genres_dramaValue">18</string>
+    <string name="genres_familyValue">10751</string>
+    <string name="genres_fantasyValue">14</string>
+    <string name="genres_historyValue">36</string>
+    <string name="genres_horrorValue">27</string>
+    <string name="genres_musicValue">10402</string>
+    <string name="genres_romanceValue">10749</string>
+    <string name="genres_scienceFictionValue">878</string>
+    <string name="genres_tvMovieValue">10770</string>
+    <string name="genres_warValue">10752</string>
+    ---- Year <string name="yearSharedPrefKey">yearSharedPrefKey</string>
+    <string name="y2020">2020</string>
+    <string name="y2019">2019</string>
+    <string name="y2018">2018</string>
+    <string name="y2017">2017</string>
+    <string name="y2016">2016</string>
+    <string name="y2015">2015</string>
+    <string name="y2014">2014</string>
+    <string name="y2013">2013</string>
+    <string name="y2012">2012</string>
+    <string name="y2011">2011</string>
+    <string name="y2010">2010</string>
+    <string name="y2009">2009</string>
+    <string name="y2008">2008</string>
+    <string name="y2007">2007</string>
+    <string name="y2006">2006</string>
+    <string name="y2005">2005</string>
+    <string name="y2004">2004</string>
+    <string name="y2003">2003</string>
+    <string name="y2002">2002</string>
+    <string name="y2001">2001</string>
+    <string name="y2000">2000</string>
+
+
+    <string name="searchEditText">Search…</string>
+    <string name="logoTextMV">MV</string>
+    <string name="logTextfollower">Follower</string>
+    <string name="moviesUpcomingTextView">Upcoming</string>
+    <string name="moviesTrendingTextView">Trending</string>
+    <string name="mmoviesNow_playingTextView">Now Playing</string>
+    <string name="MoviesMost_popularTextView">Most Popular</string>
+    <string name="moviesTop_ratedTextView">Top Rated</string>
+    <string name="TvAiring_todayTextView">Airing Today</string>
+    <string name="tvTrendingTextView">Trending</string>
+    <string name="tvMost_popularTextView">Most Popular</string>
+    <string name="tvTop_ratedTextView">Top Rated</string>
+    <string name="overviewTextView">Overview</string>
+    <string name="you_may_want_to_watchTextView">You May Want To Watch</string>
+    <string name="add_to_favoritesTextView">Add to favorites</string>
+    <string name="add_to_favorites_listContentDesc">Add To Favorites List</string>
+    <string name="searchFragmentSearchTextView">Search</string>
+    <string name="movies_or_tv_showsTextView">Movies or Tv Shows…</string>
+    <string name="popular_genresTextView">Popular Genres</string>
+    <string name="searchFragmentActionTextView">" ACTION "</string>
+    <string name="searchFragmentAnimationTextView">" ANIMATION "</string>
+    <string name="searchFragmentHorrorTextView">HORROR</string>
+    <string name="searchFragmentComedyTextView">COMEDY</string>
+    <string name="the_filter_toolTextView">The Filter Tool</string>
+    <string name="have_no_favoritesTextView">Have no favorites?</string>
+    <string name="click_on_a_movieTextView">Click on a movie and you\'ll see the \"Add to favorites button\" at the bottom of the page</string>
+
+</resources>

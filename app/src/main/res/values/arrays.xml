@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sortByEntries">
+        <item>@string/sortByTitle</item>
+        <item>@string/sortByRating</item>
+        <item>@string/sortByReleaseDate</item>
+        <item>@string/sortByPopularity</item>
+    </array>
+    <array name="sortByEntryValues">
+        <item>@string/sortByTitleValue</item>
+        <item>@string/sortByRatingValue</item>
+        <item>@string/sortByReleaseDateValue</item>
+        <item>@string/sortByPopularityValue</item>
+    </array>
+
+    <array name="genresEntries">
+        <item>@string/genres_action</item>
+        <item>@string/genres_adventure</item>
+        <item>@string/genres_animation</item>
+        <item>@string/genres_comedy</item>
+        <item>@string/genres_crime</item>
+        <item>@string/genres_documentary</item>
+        <item>@string/genres_drama</item>
+        <item>@string/genres_family</item>
+        <item>@string/genres_fantasy</item>
+        <item>@string/genres_history</item>
+        <item>@string/genres_horror</item>
+        <item>@string/genres_music</item>
+        <item>@string/genres_romance</item>
+        <item>@string/genres_scienceFiction</item>
+        <item>@string/genres_tvMovie</item>
+        <item>@string/genres_war</item>
+    </array>
+    <array name="genresEntryValues">
+        <item>@string/genres_actionValue</item>
+        <item>@string/genres_adventureValue</item>
+        <item>@string/genres_animationValue</item>
+        <item>@string/genres_comedyValue</item>
+        <item>@string/genres_crimeValue</item>
+        <item>@string/genres_documentaryValue</item>
+        <item>@string/genres_dramaValue</item>
+        <item>@string/genres_familyValue</item>
+        <item>@string/genres_fantasyValue</item>
+        <item>@string/genres_historyValue</item>
+        <item>@string/genres_horrorValue</item>
+        <item>@string/genres_musicValue</item>
+        <item>@string/genres_romanceValue</item>
+        <item>@string/genres_scienceFictionValue</item>
+        <item>@string/genres_tvMovieValue</item>
+        <item>@string/genres_warValue</item>
+    </array>
+
+    <array name="yearArray">
+        <item>@string/y2020</item>
+        <item>@string/y2019</item>
+        <item>@string/y2018</item>
+        <item>@string/y2017</item>
+        <item>@string/y2016</item>
+        <item>@string/y2015</item>
+        <item>@string/y2014</item>
+        <item>@string/y2013</item>
+        <item>@string/y2012</item>
+        <item>@string/y2011</item>
+        <item>@string/y2010</item>
+        <item>@string/y2009</item>
+        <item>@string/y2008</item>
+        <item>@string/y2007</item>
+        <item>@string/y2006</item>
+        <item>@string/y2005</item>
+        <item>@string/y2004</item>
+        <item>@string/y2003</item>
+        <item>@string/y2002</item>
+        <item>@string/y2001</item>
+        <item>@string/y2000</item>
+    </array>
+</resources>

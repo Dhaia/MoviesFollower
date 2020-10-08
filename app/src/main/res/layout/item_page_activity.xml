@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/navigationBar"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/movie_backDrop_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                app:layout_collapseMode="parallax"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gradient_slide_item"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E1E1E"
+        android:paddingTop="15dp"
+        android:theme="@style/RecyclerView"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:id="@+id/moviePage_poster"
+                android:layout_width="120dp"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/movie_poster_test"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/moviePage_title"
+                android:layout_width="240dp"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:shadowColor="#000000"
+                android:shadowRadius="22"
+                tools:text=" Breaking Bad"
+                android:textColor="#EFEFEF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/moviePage_poster"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/moviePage_releaseDate"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_light"
+                android:letterSpacing="0.01"
+                android:shadowColor="#000000"
+                android:shadowRadius="20"
+                tools:text="Released 2002 12 01"
+                android:textColor="#C6C6C6"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/moviePage_poster"
+                app:layout_constraintTop_toBottomOf="@+id/moviePage_title" />
+
+            <TextView
+                android:id="@+id/genre_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_light"
+                android:letterSpacing="0.01"
+                android:shadowColor="#000000"
+                android:shadowRadius="20"
+                tools:text="Action, Drama"
+                android:textColor="#C6C6C6"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/moviePage_releaseDate"
+                app:layout_constraintTop_toBottomOf="@+id/moviePage_releaseDate" />
+
+            <ImageView
+                android:id="@+id/moviePageStarsImageView"
+                android:layout_width="85dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/five_star"
+                app:layout_constraintStart_toStartOf="@+id/genre_textView"
+                app:layout_constraintTop_toBottomOf="@+id/genre_textView" />
+
+            <TextView
+                android:id="@+id/moviePage_voteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_light"
+                android:letterSpacing="0.01"
+                android:textSize="14sp"
+                tools:text="20"
+                android:textColor="#838383"
+                app:layout_constraintEnd_toEndOf="@+id/moviePage_rating"
+                app:layout_constraintStart_toStartOf="@+id/moviePageStarsImageView"
+                app:layout_constraintTop_toBottomOf="@+id/moviePageStarsImageView" />
+
+            <TextView
+                android:id="@+id/moviePage_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                tools:text="7.9"
+                android:textColor="#FFF27E"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/moviePageStarsImageView"
+                app:layout_constraintStart_toEndOf="@+id/moviePageStarsImageView"
+                app:layout_constraintTop_toTopOf="@+id/moviePageStarsImageView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:letterSpacing="0.07"
+                android:text="@string/overviewTextView"
+                android:textColor="#E8E8E8"
+                android:textSize="23sp"
+                android:shadowColor="#7E7E7E"
+                android:shadowRadius="20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moviePage_poster" />
+
+            <TextView
+                android:id="@+id/moviePage_overview"
+                android:layout_width="370dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="1dp"
+                tools:text="When the Valley of Peace is threatened, lazy Po the panda discovers his destiny as the and trains to become a kung fu hero, but transforming the unsleek slacker into a brave warrior won't be easy. It's up to Master Shifu and the Furious Five -- Tigress, Crane, Mantis, Viper and Monkey  to give it a try"
+                android:textColor="#9C9C9C"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/trailers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:letterSpacing="0.07"
+                android:shadowColor="#7E7E7E"
+                android:shadowRadius="20"
+                android:text="@string/you_may_want_to_watchTextView"
+                android:textColor="#E8E8E8"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/moviePage_overview" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trailers_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:theme="@style/RecyclerView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailers" />
+
+            <TextView
+                android:id="@+id/similar_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:letterSpacing="0.07"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:shadowColor="#7E7E7E"
+                android:shadowRadius="20"
+                tools:text="Similar"
+                android:textColor="#E8E8E8"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="@+id/trailers"
+                app:layout_constraintTop_toBottomOf="@+id/trailers_recyclerView" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/similar_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/RecyclerView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/similar_textView" />
+
+            <Button
+                android:onClick="favoritesButtonClicked"
+                android:id="@+id/favorites_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="100dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/favorites_button_selector"
+                android:fontFamily="@font/gilroy_medium"
+                android:letterSpacing="0.5"
+                android:shadowColor="#0CC59A"
+                android:shadowRadius="20"
+                android:text="@string/add_to_favoritesTextView"
+                android:textColor="#00DAA6"
+                app:layout_constraintStart_toStartOf="@+id/moviePage_overview"
+                app:layout_constraintTop_toBottomOf="@id/similar_recyclerView"
+                android:focusable="true"
+                android:clickable="true"
+                android:contentDescription="@string/add_to_favorites_listContentDesc"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

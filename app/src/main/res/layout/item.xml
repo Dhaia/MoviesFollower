@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="5dp"
+    android:id="@+id/adapterLayout"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/item_poster_imageView"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/movie_poster_test" />
+
+    <TextView
+        android:id="@+id/item_title_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:letterSpacing="0.02"
+        android:maxLines="2"
+        android:gravity="center"
+        android:shadowColor="#8F8F8F"
+        android:shadowRadius="20"
+        tools:text="Breaking Bad"
+        android:textColor="#E1E1E1"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/item_poster_imageView"
+        app:layout_constraintTop_toBottomOf="@id/item_poster_imageView" />
+
+    <ImageView
+        android:id="@+id/item_stars_imageView"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_width="70dp"
+        android:layout_height="13dp"
+        android:src="@drawable/five_star"
+        app:layout_constraintStart_toStartOf="@id/item_title_textView"
+        app:layout_constraintTop_toBottomOf="@id/item_title_textView" />
+
+    <TextView
+        android:id="@+id/item_rating_textView"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7.9"
+        android:textColor="#FFF200"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_stars_imageView"
+        app:layout_constraintEnd_toEndOf="@id/item_title_textView"
+        app:layout_constraintTop_toTopOf="@+id/item_stars_imageView"
+        tools:ignore="SmallSp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_black_background"
+    android:theme="@style/RecyclerView"
+    android:paddingBottom="50dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/favorites_constraint_layout">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorites_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/RecyclerView" />
+
+    <ImageView
+        android:id="@+id/noFavImageView"
+        android:layout_width="150dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noFavTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_light"
+        android:text="@string/have_no_favoritesTextView"
+        android:textColor="#9F9F9F"
+        android:textSize="30sp"
+        android:shadowColor="#959595"
+        android:shadowRadius="10"
+        app:layout_constraintEnd_toEndOf="@+id/noFavImageView"
+        app:layout_constraintStart_toStartOf="@+id/noFavImageView"
+        app:layout_constraintTop_toBottomOf="@+id/noFavImageView" />
+
+    <TextView
+        android:id="@+id/noFaveTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.02"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="40dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/click_on_a_movieTextView"
+        android:textColor="#6A6A6A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noFavTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

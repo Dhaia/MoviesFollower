@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_menu"
+        android:icon="@drawable/home_vector"
+        android:title="" />
+
+    <item android:id="@+id/discover_menu"
+        android:icon="@drawable/discover_menu_vector"
+        android:title="" />
+
+    <item android:id="@+id/favorites_menu"
+        android:icon="@drawable/favorite_vector"
+        android:title="" />
+</menu>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/favorites_poster_imageView"
+        android:layout_width="122dp"
+        android:layout_height="193dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/movie_poster_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favorites_title_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:letterSpacing="0.02"
+        android:maxLines="2"
+        android:lineSpacingExtra="1dp"
+        android:shadowColor="#8E8E8E"
+        android:shadowRadius="20"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/favorites_poster_imageView"
+        app:layout_constraintTop_toTopOf="@+id/favorites_poster_imageView"
+        tools:text="The crimes that Bindddd" />
+
+    <TextView
+        android:id="@+id/favorites_releaseDate_textView"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.005"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:maxLines="1"
+        tools:text="Released: 2020 07 12"
+        android:textColor="#A3A3A3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/favorites_poster_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/favorites_title_textView" />
+
+    <TextView
+        android:id="@+id/favorites_genre_textView"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.005"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:maxLines="2"
+        tools:text="Drama, Action"
+        android:textColor="#A3A3A3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/favorites_releaseDate_textView"
+        app:layout_constraintTop_toBottomOf="@+id/favorites_releaseDate_textView" />
+
+    <TextView
+        android:id="@+id/favorites_adult_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:maxLines="2"
+        android:text="Adult"
+        android:textColor="@color/adult"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/favorites_genre_textView"
+        app:layout_constraintTop_toBottomOf="@+id/favorites_genre_textView" />
+
+    <ImageView
+        android:id="@+id/item_stars_imageView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="85dp"
+        android:layout_height="15dp"
+        android:src="@drawable/five_star"
+        app:layout_constraintBottom_toBottomOf="@+id/favorites_poster_imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/item_rating_textView"
+        android:letterSpacing="0.3"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7.9"
+        android:textColor="#FFF200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/item_stars_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/item_stars_imageView"
+        app:layout_constraintStart_toStartOf="@+id/item_stars_imageView" />
+
+    <TextView
+        android:id="@+id/favorites_updatedAt_textView"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginBottom="5dp"
+        android:letterSpacing="0.005"
+        android:maxLines="2"
+        tools:text="Added on 2017 12 03"
+        android:textColor="#616161"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/favorites_poster_imageView"
+        app:layout_constraintStart_toStartOf="@+id/favorites_adult_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

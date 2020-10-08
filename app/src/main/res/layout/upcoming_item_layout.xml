@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="260dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/upcomingBackDrop"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fifth_image" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/gradient_upcoming"
+        app:layout_constraintBottom_toBottomOf="@+id/upcomingBackDrop"
+        app:layout_constraintEnd_toEndOf="@+id/upcomingBackDrop"
+        app:layout_constraintStart_toStartOf="@+id/upcomingBackDrop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/upcomingTitleTextView"
+        android:layout_width="290dp"
+        android:layout_height="0dp"
+        tools:text="Sonic"
+        android:textAllCaps="false"
+
+        android:letterSpacing="0.02"
+        android:shadowColor="#8F8F8F"
+        android:shadowRadius="20"
+        android:fontFamily="@font/gilroy_medium"
+        android:textColor="#E1E1E1"
+        android:textSize="20sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="@+id/upcomingBackDrop"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingBackDrop" />
+
+    <TextView
+        android:id="@+id/upcomingDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="10dp"
+        android:letterSpacing="0.05"
+        android:fontFamily="@font/gilroy_light"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="#9E9E9E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/upcomingTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingTitleTextView"
+        tools:text="2020 05 06"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

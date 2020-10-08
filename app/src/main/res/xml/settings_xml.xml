@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/sortByEntries"
+        android:entryValues="@array/sortByEntryValues"
+        android:key="@string/sortByListKey"
+        android:title="Sort by"
+        android:summary="None"/>
+
+    <MultiSelectListPreference
+        android:entries="@array/genresEntries"
+        android:title="Genres"
+        android:entryValues="@array/genresEntryValues"
+        android:key="@string/genresKey" />
+
+    <ListPreference
+        android:title="Year"
+        android:summary="None"
+        android:entries="@array/yearArray"
+        android:entryValues="@array/yearArray"
+        android:key="@string/yearSharedPrefKey"/>
+</PreferenceScreen>
