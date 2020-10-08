@@ -32,4 +32,4 @@ Movies Follower is an app that lets you discover movies and tv shows using the m
 - Start using Dagger2 for dependency injection.
 - Add the feature where the app loads more data when getting to the end of the recycler view.
 - Fix the swipe-to-delete bug. The problem is, I can't delete two items at the same time, I must wait until the snackbar disappears, if I don't, the last deleted item will appear again.
-- Add unit and UI tests for the app.
+- Add unit and UI tests for the app (I only used Firebase test lab).
