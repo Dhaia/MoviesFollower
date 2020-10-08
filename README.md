@@ -1,4 +1,5 @@
-![alt text](https://i.imgur.com/0gfMihl.png) # Movies Follower
+# Movies Follower
+![alt text](https://i.imgur.com/0gfMihl.png)
 
 Movies Follower is an app that lets you discover movies and tv shows using the moviesdb API.
 
