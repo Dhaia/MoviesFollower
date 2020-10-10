@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mvfollower.moviesfollower.databases.FavoritesObjectEntity;
+import com.mvfollower.moviesfollower.database.FavoritesObjectEntity;
 import com.mvfollower.moviesfollower.R;
 import com.mvfollower.moviesfollower.utilities.HashMapUtilities;
 import com.mvfollower.moviesfollower.utilities.RatingUtilities;

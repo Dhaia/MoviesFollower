@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mvfollower.moviesfollower.MoviePageActivity;
 import com.mvfollower.moviesfollower.pojos.TvBody;
 import com.mvfollower.moviesfollower.R;
-import com.mvfollower.moviesfollower.utilities.IntentUtitilities;
+import com.mvfollower.moviesfollower.utilities.IntentUtilities;
 import com.mvfollower.moviesfollower.utilities.RatingUtilities;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
@@ -55,7 +55,7 @@ public class TvRecyclerViewAdapter extends RecyclerView.Adapter<TvRecyclerViewAd
         public void onClick(View v) {
             TvBody.TvDataStructure tvDataStructure = tvList.get(getAdapterPosition());
             Intent intent = new Intent(context, MoviePageActivity.class);
-            IntentUtitilities.setIntentExtras(intent, tvDataStructure);
+            IntentUtilities.setIntentExtras(intent, tvDataStructure);
             context.startActivity(intent);
         }
     }

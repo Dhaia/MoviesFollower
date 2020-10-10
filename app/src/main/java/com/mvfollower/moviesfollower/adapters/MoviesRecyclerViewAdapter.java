@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mvfollower.moviesfollower.MoviePageActivity;
 import com.mvfollower.moviesfollower.pojos.MoviesBody;
 import com.mvfollower.moviesfollower.R;
-import com.mvfollower.moviesfollower.utilities.IntentUtitilities;
+import com.mvfollower.moviesfollower.utilities.IntentUtilities;
 import com.mvfollower.moviesfollower.utilities.RatingUtilities;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
@@ -90,7 +90,7 @@ public class MoviesRecyclerViewAdapter extends RecyclerView.Adapter<MoviesRecycl
         public void onClick(View v) {
             MoviesBody.MovieDataStructure movieDataStructure = mMoviesList.get(getAdapterPosition());
             Intent intent = new Intent(mContext, MoviePageActivity.class);
-            IntentUtitilities.setIntentExtras(intent, movieDataStructure);
+            IntentUtilities.setIntentExtras(intent, movieDataStructure);
             mContext.startActivity(intent);
         }
     }

@@ -1,5 +1,10 @@
 package com.mvfollower.moviesfollower.network;
 
+import android.content.res.Resources;
+
+import com.bumptech.glide.load.engine.Resource;
+import com.mvfollower.moviesfollower.BuildConfig;
+import com.mvfollower.moviesfollower.R;
 import com.mvfollower.moviesfollower.pojos.MoviesBody;
 import com.mvfollower.moviesfollower.pojos.TvBody;
 import com.mvfollower.moviesfollower.pojos.UpcomingBody;

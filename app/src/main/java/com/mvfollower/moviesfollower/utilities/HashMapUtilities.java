@@ -2,6 +2,11 @@ package com.mvfollower.moviesfollower.utilities;
 
 import java.util.HashMap;
 
+/**
+ *  I made this class in order to make a hash map with all of the genre ids of the moviesdb API
+ *  By making this, I can compare every number I get from the API and display the right texts of
+ *  the genres for any movie/tvShow
+ */
 public class HashMapUtilities {
     final static int moviesAction = 28;
     final static int moviesAdventure = 12;

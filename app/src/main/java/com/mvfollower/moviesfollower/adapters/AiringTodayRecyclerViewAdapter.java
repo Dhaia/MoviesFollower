@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mvfollower.moviesfollower.MoviePageActivity;
 import com.mvfollower.moviesfollower.pojos.TvBody;
 import com.mvfollower.moviesfollower.R;
-import com.mvfollower.moviesfollower.utilities.IntentUtitilities;
+import com.mvfollower.moviesfollower.utilities.IntentUtilities;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
@@ -84,7 +84,7 @@ public class AiringTodayRecyclerViewAdapter extends RecyclerView.Adapter<AiringT
         public void onClick(View v) {
             TvBody.TvDataStructure tvDataStructure = tvList.get(getAdapterPosition());
             Intent intent = new Intent(mContext, MoviePageActivity.class);
-            IntentUtitilities.setIntentExtras(intent, tvDataStructure);
+            IntentUtilities.setIntentExtras(intent, tvDataStructure);
             mContext.startActivity(intent);
         }
     }

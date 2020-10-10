@@ -1,9 +1,8 @@
-package com.mvfollower.moviesfollower.utilities;
+package com.mvfollower.moviesfollower.network;
 
 import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
-import com.mvfollower.moviesfollower.network.ApiInterface;
 import com.mvfollower.moviesfollower.pojos.MoviesBody;
 import com.mvfollower.moviesfollower.pojos.TvBody;
 import com.mvfollower.moviesfollower.pojos.UpcomingBody;
@@ -16,6 +15,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * This class is made to make Retrofit calls and store the results in MutableLiveData
+ */
 public class RetrofitUtilities {
     public final static String BASE_URL = "https://api.themoviedb.org/3/";
 

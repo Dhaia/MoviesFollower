@@ -20,7 +20,7 @@ import com.mvfollower.moviesfollower.data.MainViewModel;
 import com.mvfollower.moviesfollower.data.MainViewModelFactory;
 import com.mvfollower.moviesfollower.pojos.MoviesBody;
 import com.mvfollower.moviesfollower.R;
-import com.mvfollower.moviesfollower.utilities.RetrofitUtilities;
+import com.mvfollower.moviesfollower.network.RetrofitUtilities;
 
 import org.jetbrains.annotations.NotNull;
 

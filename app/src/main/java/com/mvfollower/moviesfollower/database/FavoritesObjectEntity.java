@@ -1,4 +1,4 @@
-package com.mvfollower.moviesfollower.databases;
+package com.mvfollower.moviesfollower.database;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

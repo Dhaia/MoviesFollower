@@ -1,12 +1,14 @@
 package com.mvfollower.moviesfollower.data;
 
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.mvfollower.moviesfollower.pojos.MoviesBody;
 import com.mvfollower.moviesfollower.network.ApiInterface;
 import com.mvfollower.moviesfollower.pojos.TvBody;
-import com.mvfollower.moviesfollower.utilities.RetrofitUtilities;
+import com.mvfollower.moviesfollower.network.RetrofitUtilities;
 
 import java.util.List;
 
@@ -29,6 +31,7 @@ public class MainViewModel extends ViewModel {
     ApiInterface apiInterface;
     final String week = "week";
     final String day = "day";
+
     public MainViewModel(String genreId, String query) {
         apiInterface = RetrofitUtilities.buildRetrofit();
 
@@ -51,18 +54,15 @@ public class MainViewModel extends ViewModel {
         RetrofitUtilities.getQueryTv(apiInterface, query, queryTv);
     }
 
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getTrendingMoviesWeek(){ return trendingMoviesWeek; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getTrendingMoviesDay(){ return trendingMoviesDay; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getUpcomingMoviesList(){ return upcomingMoviesList; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getNowPlayingMoviesList() { return nowPlayingMoviesList; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getMostPopularMoviesList() { return mostPopularMoviesList; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getTopRatedMoviesList() { return topRatedMoviesList; }
-    public MutableLiveData<List<TvBody.TvDataStructure>> getTrendingTv(){ return trendingTv; }
-    public MutableLiveData<List<TvBody.TvDataStructure>> getTvAiringToday() { return tvAiringToday; }
-    public MutableLiveData<List<TvBody.TvDataStructure>> getTvMostPopular() { return tvMostPopular; }
-    public MutableLiveData<List<TvBody.TvDataStructure>> getTvTopRated() { return tvTopRated; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getQueryMovies() { return queryMovies; }
-    public MutableLiveData<List<TvBody.TvDataStructure>> getQueryTv() { return queryTv; }
-    public MutableLiveData<List<MoviesBody.MovieDataStructure>> getDiscoverMovies() { return discoverMovies; }
-    public MutableLiveData<List<TvBody.TvDataStructure>> getDiscoverTv() { return discoverTv; }
+    public LiveData<List<MoviesBody.MovieDataStructure>> getTrendingMoviesWeek(){ return trendingMoviesWeek; }
+    public LiveData<List<MoviesBody.MovieDataStructure>> getUpcomingMoviesList(){ return upcomingMoviesList; }
+    public LiveData<List<MoviesBody.MovieDataStructure>> getNowPlayingMoviesList() { return nowPlayingMoviesList; }
+    public LiveData<List<MoviesBody.MovieDataStructure>> getMostPopularMoviesList() { return mostPopularMoviesList; }
+    public LiveData<List<MoviesBody.MovieDataStructure>> getTopRatedMoviesList() { return topRatedMoviesList; }
+    public LiveData<List<TvBody.TvDataStructure>> getTrendingTv(){ return trendingTv; }
+    public LiveData<List<TvBody.TvDataStructure>> getTvAiringToday() { return tvAiringToday; }
+    public LiveData<List<TvBody.TvDataStructure>> getTvMostPopular() { return tvMostPopular; }
+    public LiveData<List<TvBody.TvDataStructure>> getTvTopRated() { return tvTopRated; }
+    public LiveData<List<MoviesBody.MovieDataStructure>> getDiscoverMovies() { return discoverMovies; }
+    public LiveData<List<TvBody.TvDataStructure>> getDiscoverTv() { return discoverTv; }
 }

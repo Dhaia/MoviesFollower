@@ -7,6 +7,11 @@ import com.mvfollower.moviesfollower.R;
 
 import java.text.DecimalFormat;
 
+/**
+ * This class is made to set the ratingImageView to the right star drawable
+ *  and to set the ratingTextView to the right text
+ * I have to provide the image view, rating(that was extracted from the API) and the ratingTextView
+ */
 public class RatingUtilities {
     public static void setupStars(ImageView imageView, double rating, TextView textView){
         double ratingScaleOfFive = rating / 2;

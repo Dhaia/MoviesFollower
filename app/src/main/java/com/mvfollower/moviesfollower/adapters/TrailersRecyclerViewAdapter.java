@@ -7,21 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mvfollower.moviesfollower.BuildConfig;
 import com.mvfollower.moviesfollower.pojos.VideosBody;
 import com.mvfollower.moviesfollower.R;
 import com.bumptech.glide.Glide;
 import com.google.android.youtube.player.YouTubeStandalonePlayer;
-
 import java.util.List;
+import java.util.Objects;
+import java.util.ResourceBundle;
 
 public class TrailersRecyclerViewAdapter extends RecyclerView.Adapter<TrailersRecyclerViewAdapter.ImagesViewHolder> {
     private Context context;
     private List<VideosBody.VideosList> backdropList;
-    private static final String YOUTUBE_API_KEY = "Enter Your API key";
 
     public TrailersRecyclerViewAdapter(Context context, List<VideosBody.VideosList> backdropList) {
         this.context = context;
@@ -72,7 +72,7 @@ public class TrailersRecyclerViewAdapter extends RecyclerView.Adapter<TrailersRe
         @Override
         public void onClick(View v) {
             VideosBody.VideosList videosList = backdropList.get(getAdapterPosition());
-            Intent intent = YouTubeStandalonePlayer.createVideoIntent((Activity) context, YOUTUBE_API_KEY, videosList.getKey());
+            Intent intent = YouTubeStandalonePlayer.createVideoIntent((Activity) context, context.getString(R.string.YOUTUBE_API_KEY), videosList.getKey());
             context.startActivity(intent);
         }
     }
