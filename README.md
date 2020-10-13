@@ -36,4 +36,4 @@ Movies Follower is an app that lets you discover movies and tv shows using the m
 
 # Try the app
 
-If you have an Android device, here a [**Direct Link**](https://docs.google.com/uc?export=download&id=1Bh8s-RikywKXhPPdUzjHuw37VzQgDN9F) for you to run this app on your device.
+If you have an Android device, here is a [**Direct Link**](https://docs.google.com/uc?export=download&id=1Bh8s-RikywKXhPPdUzjHuw37VzQgDN9F) for you to run this app on your device.
